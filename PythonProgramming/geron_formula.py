@@ -7,11 +7,11 @@
 # треугольника по переданным длинам трёх его сторон по формуле Герона:
 
 
-def geron_formula():
-    a, b, c = (int(input()) for _ in range(3))
+def geron_formula(a, b, c):
     semiPerimeter = (a + b + c) / 2
     print((semiPerimeter * (semiPerimeter - a) * (semiPerimeter - b) * (semiPerimeter - c)) ** 0.5)
 
 
 if __name__ == '__main__':
-    geron_formula()
+    a, b, c = (int(input()) for _ in range(3))
+    geron_formula(a, b, c)
